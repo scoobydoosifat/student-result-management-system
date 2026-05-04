@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import *
 from PIL import Image, ImageTk
+from result import resultClass
+from report import reportClass
 
 from course import CourseClass
 
@@ -44,8 +46,8 @@ class RMS:
 
         Button(menu_frame, text="Course", bg="#0b5377", fg="white",command=self.add_course).grid(row=0, column=0, padx=5, pady=5, sticky="ew",ipady=10)
         Button(menu_frame, text="Student", bg="#0b5377", fg="white").grid(row=0, column=1, padx=5, pady=5, sticky="ew",ipady=10)
-        Button(menu_frame, text="Result", bg="#0b5377", fg="white").grid(row=0, column=2, padx=5, pady=5, sticky="ew",ipady=10)
-        Button(menu_frame, text="View Results", bg="#0b5377", fg="white").grid(row=0, column=3, padx=5, pady=5, sticky="ew",ipady=10)
+        Button(menu_frame, text="Result", bg="#0b5377", fg="white", command=self.add_result).grid(row=0, column=2, padx=5, pady=5, sticky="ew", ipady=10)
+        Button(menu_frame, text="View Results", bg="#0b5377", fg="white", command=self.add_report).grid(row=0, column=3, padx=5, pady=5, sticky="ew", ipady=10)
         Button(menu_frame, text="Logout", bg="#0b5377", fg="white").grid(row=0, column=4, padx=5, pady=5, sticky="ew",ipady=10)
         Button(menu_frame, text="Exit", bg="#0b5377", fg="white", command=self.root.destroy)\
             .grid(row=0, column=5, padx=5, pady=5, sticky="ew",ipady=10)
@@ -114,8 +116,16 @@ class RMS:
     
 
     def add_course(self):
-     new_win = Toplevel(self.root)
-     CourseClass(new_win)
+        new_win = Toplevel(self.root)
+        CourseClass(new_win)
+     
+    def add_result(self):
+        new_win = Toplevel(self.root)
+        resultClass(new_win)
+
+    def add_report(self):
+        new_win = Toplevel(self.root)
+        reportClass(new_win)
 
 # ===== RUN =====
 if __name__ == "__main__":
