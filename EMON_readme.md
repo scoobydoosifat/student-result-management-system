@@ -13,13 +13,13 @@
 
 **Branch:** `emon`
 
-**Module Contribution:** Course Enrollment Module & Database Schema Update
+**Module Contribution:** Course Enrollment Module & Creation of Database Schema 
 
 ---
 
 ## ✅ My Contributions
 
-### 1. `enrollment.py` — Course Enrollment Module *(New File)*
+### 1. `enrollment.py` — Course Enrollment Module 
 
 A fully functional Tkinter window class (`EnrollmentClass`) that manages student course enrollments.
 
@@ -50,7 +50,7 @@ A fully functional Tkinter window class (`EnrollmentClass`) that manages student
 
 ---
 
-### 2. `create_db.py` — Database Schema 
+### 2. `create_db.py` — Creation of Database Schema 
 
 Created all the table to the database.The created tables are named below.
 
