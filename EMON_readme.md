@@ -50,22 +50,9 @@ A fully functional Tkinter window class (`EnrollmentClass`) that manages student
 
 ---
 
-### 2. `create_db.py` — Database Schema Update *(Modified File)*
+### 2. `create_db.py` — Database Schema 
 
-Added the `enrollment` table to the existing database initialisation script.
-
-**New Table Added:**
-
-```sql
-CREATE TABLE IF NOT EXISTS enrollment(
-    eid         INTEGER PRIMARY KEY AUTOINCREMENT,
-    roll        TEXT,
-    student_name TEXT,
-    course      TEXT,
-    enroll_date TEXT,
-    status      TEXT DEFAULT 'Active'
-)
-```
+Created all the table to the database.The crated tables are named below.
 
 **All Tables in `rms.db`:**
 
@@ -75,7 +62,7 @@ CREATE TABLE IF NOT EXISTS enrollment(
 | `student` | Stores student profiles |
 | `result` | Stores exam marks and percentage |
 | `employee` | Stores login credentials |
-| `enrollment` | ✅ NEW — Tracks student-course enrollments |
+| `enrollment` | Tracks student-course enrollments |
 
 ---
 
