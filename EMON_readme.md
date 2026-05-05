@@ -52,7 +52,7 @@ A fully functional Tkinter window class (`EnrollmentClass`) that manages student
 
 ### 2. `create_db.py` — Database Schema 
 
-Created all the table to the database.The crated tables are named below.
+Created all the table to the database.The created tables are named below.
 
 **All Tables in `rms.db`:**
 
